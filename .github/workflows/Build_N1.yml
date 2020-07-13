@@ -79,7 +79,7 @@ jobs:
 
     - name: Configuration Customization - Build_N1
       env:
-        CONFIG_FILE: 'N1.config'
+        CONFIG_FILE: 'Build_N1.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
