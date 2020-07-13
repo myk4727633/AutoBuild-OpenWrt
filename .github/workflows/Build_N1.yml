@@ -74,8 +74,8 @@ jobs:
     - name: Import external feeds
       working-directory: ./openwrt
       run: |
-         git clone https://github.com/kenzok8/openwrt-packages package/lean
-         git clone https://github.com/kenzok8/small package/lean
+         git clone https://github.com/kenzok8/openwrt-packages.git lede/package
+         git clone https://github.com/kenzok8/small.git lede/package
     #    git clone "your_github_link" package/"your_folder_name"      
 
     - name: Configuration Customization - Build_N1
